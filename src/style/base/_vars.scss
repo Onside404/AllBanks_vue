@@ -1,0 +1,165 @@
+//fill color
+$color-background: #424242;
+$color-field-01: #353434;
+$color-field-02: #1DBBFF;
+$color-field-03: #E7E7E7;
+$color-field-04: #FFFFFF;
+$color-field-05: #F6F6F6;
+$color-field-06: #EFF3F6;
+$color-field-07: #15D1C6;
+$color-field-08: #D0D3D6;
+$color-field-09: #09152F;
+$color-field-10: #F0F1FF;
+$color-field-11: #FFF4D9;
+$color-field-12: #FFECE9;
+$color-field-13: #F7F9F9;
+$color-field-14: #FFD600;
+$color-field-15: #DDA300;
+$color-field-16: #CA18EC;
+$color-field-17: #F910E9;
+$color-field-18: #F8C600;
+$color-field-19: #00E3C9;
+$color-field-20: #00BABB;
+$color-field-21: #79818A;
+$color-field-22: #FBC400;
+$color-field-23: #CD74F8;
+
+//text color
+$color-text-01: #E7E7E7;
+$color-text-02: #FFFFFF;
+$color-text-03: #1DBBFF;
+$color-text-04: #79818A;
+$color-text-05: #D9FF41;
+$color-text-06: #424242;
+$color-text-07: #B0B7BF;
+$color-text-08: #15D1C6;
+$color-text-09: #09152F;
+$color-text-10: #2E282A;
+$color-text-11: #6C7997;
+$color-text-12: #9FB3C2;
+$color-text-13: #FBC400;
+$color-text-14: #C86A13;
+$color-text-15: #353434;
+$color-text-16: #F6F6F6;
+$color-text-17: #DDA300;
+$color-text-18: #2C3240;
+$color-text-19: #DDA300;
+
+  //Fonts
+//Philippines
+@mixin font-links-Philippines {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  color: $color-text-01;
+  font-family: RobotoMedium, sans-serif;
+}
+
+@mixin font-h1-Philippines {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 62.5px;
+  color: $color-text-06;
+  font-family: ReadexPro, sans-serif;
+}
+
+@mixin font-h2-Philippines {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: $color-text-01;
+  font-family: ReadexPro, sans-serif;
+}
+
+@mixin font-h3-Philippines {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: $color-text-07;
+  font-family: ReadexPro, sans-serif;
+}
+
+@mixin font-p-Philippines {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.79px;
+  color: $color-text-04;
+  font-family: OpenSans, sans-serif;
+}
+
+@mixin font-p2-Philippines {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20.43px;
+  color: $color-text-04;
+  font-family: OpenSans, sans-serif;
+}
+
+@mixin font-p3-Philippines {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.07px;
+  color: $color-text-07;
+  font-family: OpenSans, sans-serif;
+}
+
+@mixin font-card-title-desk {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 13px;
+  font-family: ReadexPro, sans-serif;
+  color: $color-text-07;
+}
+
+@mixin font-card-text-desk {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20.43px;
+  font-family: OpenSans, sans-serif;
+  color: $color-text-06;
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url('@/assets/fonts/Roboto-Medium.ttf');
+  src: local('Roboto Medium'), local('Roboto Medium'),
+  url('@/assets/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ReadexPro';
+  src: url('@/assets/fonts/ReadexPro-Medium.ttf');
+  src: local('Readex Pro'), local('Readex Pro'),
+  url('@/assets/fonts/ReadexPro-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('@/assets/fonts/OpenSans-Regular.ttf');
+  src: local('Open Sans'), local('Open Sans'),
+  url('@/assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('@/assets/fonts/Sora-Medium.ttf');
+  src: local('Sora'), local('Sora'),
+  url('@/assets/fonts/Sora-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('@/assets/fonts/Poppins-Medium.ttf');
+  src: local('Poppins'), local('Poppins'),
+  url('@/assets/fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

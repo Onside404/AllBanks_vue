@@ -1,0 +1,142 @@
+.footer {
+  margin: 0 auto;
+  max-width: 920px;
+  min-width: 920px;
+  @media screen and (max-width: 575px) {
+    max-width: 330px;
+    min-width: 330px;
+  }
+  &__title {
+    padding: 37px 0 33px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &--logo{
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 575px) {
+        flex-direction: column;
+      }
+      &__img {
+        margin-right: 40px;
+        @media screen and (max-width: 575px) {
+          margin-right: 0;
+          margin-bottom: 30px;
+          width: 122px;
+          height: 23px;
+        }
+      }
+      &__doc {
+        @include font-p3-Philippines;
+        margin-right: 35px;
+        @media screen and (max-width: 575px) {
+          margin-right: 0;
+        }
+      }
+      &__doc:hover {
+        color: $color-text-01;
+      }
+    }
+    &--links {
+      display: flex;
+      align-items: start;
+      &__img {
+        margin-left: 35px;
+      }
+      &__img:hover {
+        fill: $color-field-03;
+      }
+    }
+  }
+  &__kreditka {
+    @include font-p2-Philippines;
+    color: $color-text-07;
+    @media screen and (max-width: 575px) {
+      text-align: center;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 60px 0 50px 0;
+    gap: 75px;
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px 0 30px 0;
+    }
+    &--text {
+      align-self: start;
+      flex-basis: 425px;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 22px;
+      color: $color-text-04;
+      font-family: OpenSans, sans-serif;
+      @media screen and (max-width: 575px) {
+        flex-basis: 100%;
+      }
+    }
+    &--disclaimer {
+      flex-basis: 425px;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 22px;
+      color: $color-text-04;
+      font-family: OpenSans, sans-serif;
+      @media screen and (max-width: 575px) {
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    padding-bottom: 50px;
+    &--img {
+      margin-right: 35px;
+      @media screen and (max-width: 575px) {
+        margin-right: 15px;
+      }
+    }
+    &--text {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 22px;
+      color: $color-text-04;
+      font-family: OpenSans, sans-serif;
+      &__section {
+        margin-bottom: 22px;
+      }
+    }
+  }
+}
+
+.footer-bg {
+  background: $color-field-01;
+}
+
+.mb-none {
+  margin-bottom: 0;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+  @media screen and (min-width: 575px) {
+    margin-bottom: 0;
+  }
+}
+
+.mr-27 {
+  margin-right: 27px;
+
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+  @media screen and (max-width: 575px) {
+    margin-bottom: 20px;
+  }
+}

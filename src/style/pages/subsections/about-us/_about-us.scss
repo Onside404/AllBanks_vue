@@ -1,0 +1,415 @@
+.title-about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $color-field-23;
+  padding: 80px 0;
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    width: 920px;
+    gap: 30px;
+    &--info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 295px;
+      &__name {
+        @include font-h1-Philippines;
+        color: $color-text-02;
+      }
+      &__text {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 28.6px;
+        font-family: OpenSans, sans-serif;
+        color: $color-text-02;
+      }
+    }
+    &--bloc {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+.title-about-us-mobil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $color-field-23;
+  padding: 45px 0 65px 0;
+  @media screen and (min-width: 575px) {
+    display: none;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    gap: 35px;
+    &--info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      width: 295px;
+      &__name {
+        @include font-h3-Philippines;
+        font-weight: 600;
+        line-height: 40px;
+        color: $color-text-02;
+      }
+      &__text {
+        text-align: center;
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 28.6px;
+        font-family: OpenSans, sans-serif;
+        color: $color-text-02;
+      }
+    }
+    &--bloc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 0 80px 0;
+  @media screen and (max-width: 575px) {
+    padding: 40px 0 40px 0;
+  }
+  &__title {
+    @include font-h2-Philippines;
+    margin-bottom: 15px;
+    @media screen and (max-width: 575px) {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 25px;
+      font-family: ReadexPro, sans-serif;
+      color: $color-text-01;
+    }
+  }
+  &__text {
+    @include font-p-Philippines;
+    margin-bottom: 35px;
+    @media screen and (max-width: 575px) {
+      text-align: center;
+      @include font-p3-Philippines;
+      color: $color-text-04;
+      width: 90%;
+    }
+  }
+  &__grid {
+    width: 920px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    @media screen and (max-width: 575px) {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      gap: 20px;
+    }
+    &--box {
+      padding: 25px;
+      background: $color-field-01;
+      border-radius: 10px;
+      &__title {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+        @media screen and (max-width: 575px) {
+          flex-direction: row;
+          align-items: center;
+        }
+        &--img {
+          width: 40px;
+          height: 40px;
+        }
+        &--text {
+          @include font-h3-Philippines;
+          @media screen and (max-width: 575px) {
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 18.75px;
+            font-family: ReadexPro, sans-serif;
+            color: $color-text-07;
+          }
+        }
+      }
+      &__content {
+        @include font-p2-Philippines;
+      }
+    }
+  }
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 920px;
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+  &__title {
+    @include font-h2-Philippines;
+    &--grey {
+      color: $color-text-07;
+    }
+  }
+  &__text {
+    padding-top: 15px;
+    @include font-p-Philippines;
+    @media screen and (max-width: 575px) {
+      text-align: center;
+      @include font-p3-Philippines;
+      color: $color-text-04;
+    }
+  }
+  &__logo-banks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 100%;
+    height: 60px;
+    @media screen and (max-width: 575px) {
+      display: none;
+    }
+  }
+  &__picture {
+    margin-top: 35px;
+  }
+}
+
+.partners-mobil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  background: $color-field-03;
+  @media screen and (min-width: 575px) {
+    display: none;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    &--title {
+      @include font-h2-Philippines;
+      font-size: 20px;
+      line-height: 25px;
+      color: $color-text-06;
+      margin-bottom: 10px;
+    }
+    &--text {
+      text-align: center;
+      @include font-p3-Philippines;
+      color: $color-text-04;
+    }
+  }
+}
+
+.our-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  background: $color-field-01;
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+  &__title {
+    @include font-h1-Philippines;
+    color: $color-text-01;
+    margin-bottom: 15px;
+  }
+  &__text {
+    @include font-p-Philippines;
+    color: $color-text-04;
+    margin-bottom: 35px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 920px;
+    &--button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 90px;
+        background: $color-background;
+        border-radius: 10px;
+        &:hover {
+          background: linear-gradient(90deg, #A515C1 10%, #D20EC5 90%);
+        }
+      }
+      &__text {
+        @include font-h3-Philippines;
+        color: $color-text-01;
+      }
+    }
+  }
+}
+
+.our-services-mobil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  @media screen and (min-width: 575px) {
+    display: none;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    &--title {
+      @include font-h2-Philippines;
+      font-size: 20px;
+      line-height: 25px;
+      color: $color-text-02;
+      margin-bottom: 10px;
+    }
+    &--text {
+      text-align: center;
+      @include font-p3-Philippines;
+      color: $color-text-04;
+    }
+    &--btn-carousel {
+      margin-top: 25px;
+      &__btn-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 350px;
+        padding: 20px;
+        background: $color-field-01;
+        border-radius: 10px;
+        &--button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.input-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  @media screen and (max-width: 575px) {
+    padding: 40px 0;
+  }
+  &__title {
+    @include font-h2-Philippines;
+    color: $color-text-01;
+    margin-bottom: 15px;
+    @media screen and (max-width: 575px) {
+      font-size: 20px;
+      line-height: 25px;
+      color: $color-text-02;
+      margin-bottom: 10px;
+    }
+  }
+  &__text {
+    text-align: center;
+    @include font-p-Philippines;
+    width: 920px;
+    margin-bottom: 35px;
+    @media screen and (max-width: 575px) {
+      width: 350px;
+      @include font-p3-Philippines;
+      color: $color-text-04;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+    width: 920px;
+    background: $color-field-01;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    @media screen and (max-width: 575px) {
+      width: 350px;
+      gap: 20px;
+      padding: 20px;
+    }
+    &--input-data {
+      display: flex;
+      gap: 30px;
+      @media screen and (max-width: 575px) {
+        flex-direction: column;
+        gap: 20px;
+      }
+      &__select {
+        padding: 18px 20px;
+        width: 420px;
+        background: $color-field-05;
+        border-radius: 10px;
+        @include font-p2-Philippines;
+        @media screen and (max-width: 575px) {
+          width: 100%;
+        }
+      }
+      &__input-email {
+        padding: 18px 20px;
+        width: 420px;
+        background: $color-field-05;
+        border-radius: 10px;
+        @include font-p2-Philippines;
+        @media screen and (max-width: 575px) {
+          width: 100%;
+        }
+      }
+    }
+    &--message {
+      padding: 18px 20px;
+      width: 100%;
+      background: $color-field-05;
+      border-radius: 10px;
+      @include font-p2-Philippines;
+
+    }
+
+  }
+  &__btn-send {
+    @media screen and (max-width: 575px) {
+      width: 350px;
+    }
+  }
+}
+
+.mt--40 {
+  @media screen and (max-width: 575px) {
+    margin-top: -20px;
+  }
+}

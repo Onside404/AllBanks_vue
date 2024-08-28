@@ -1,0 +1,26 @@
+// Base
+@import "./base/base";
+@import "./base/reset";
+@import "./base/vars";
+
+//Pages
+@import "pages/philippines-page";
+@import "pages/credit-cards";
+@import "pages/site-map";
+@import "pages/bank-page";
+@import "pages/reviews-page";
+@import "pages/artickles-page";
+@import "pages/sign-up";
+@import "pages/subsections/card/card";
+@import "pages/subsections/about-us/about-us";
+@import "pages/subsections/reviews/write-review";
+@import "pages/subsections/reviews/review";
+@import "pages/subsections/artickles/artickle";
+
+
+//Items
+@import "./items/navigation";
+@import "./items/button";
+@import "./items/inputs";
+@import "./items/footer";
+@import "./items/reused-forms";

@@ -1,0 +1,11 @@
+.btn-gradient {
+  padding: 15px 42px 15px 42px;
+  background: linear-gradient(90deg, #EC23DE 10%, #B926D6 90%);
+  border-radius: 10px;
+  @include font-p-Philippines;
+  color: $color-text-01;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #A515C1 10%, #D20EC5 90%);
+}

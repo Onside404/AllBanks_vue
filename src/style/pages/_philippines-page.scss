@@ -1,0 +1,491 @@
+.background_philippines {
+  background: $color-background;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0 40px 0;
+  background: $color-field-02;
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+  &--wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 920px;
+    min-width: 920px;
+    flex-basis: 100%;
+    &__text {
+      text-align: start;
+      font-size: 50px;
+      width: 520px;
+      @include font-h1-Philippines;
+      &--yellow {
+        color: $color-text-05;
+      }
+    }
+    &__img {
+      margin-left: -110px;
+    }
+  }
+}
+
+.title-mobil {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0 40px 0;
+  background: $color-field-02;
+  @media screen and (min-width: 575px) {
+    display: none;
+  }
+  &__wrapper {
+    width: 350px;
+    &--title {
+      @include font-h1-Philippines;
+      font-size: 24px;
+      line-height: 40px;
+    }
+    &--yellow {
+      @include font-h1-Philippines;
+      font-size: 24px;
+      line-height: 40px;
+      color: $color-text-05;
+    }
+    &--text {
+      @include font-p3-Philippines;
+      color: $color-text-06;
+      padding: 10px 0 35px 0;
+    }
+  }
+}
+
+.container_allbanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 0 auto;
+  width: 920px;
+  @media screen and (max-width: 575px) {
+    margin: 30px auto 0 auto ;
+    max-width: 350px;
+    min-width: 350px;
+  }
+  &__title {
+    @include font-h2-Philippines;
+    @media screen and (max-width: 575px) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &--grey {
+      color: $color-text-07;
+    }
+  }
+  &__text {
+    padding-top: 15px;
+    @include font-p-Philippines;
+    @media screen and (max-width: 575px) {
+      text-align: center;
+      @include font-p3-Philippines;
+      color: $color-text-04;
+    }
+  }
+  &__input {
+    display: flex;
+    width: 100%;
+    padding-top: 35px;
+    gap: 30px;
+  }
+  &__logo-banks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 100%;
+    @media screen and (max-width: 575px) {
+      display: none;
+    }
+  }
+}
+
+.allbanks-mobil {
+  max-width: 350px;
+  min-width: 350px;
+  margin: 30px auto 30px auto ;
+  @media screen and (min-width: 575px) {
+    display: none;
+  }
+}
+
+.loans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 0 auto;
+  &__title {
+    @include font-h2-Philippines;
+  }
+  &__text {
+    @include font-p-Philippines;
+    margin-top: 15px;
+  }
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    gap: 30px;
+    max-width: 920px;
+    min-width: 920px;
+    &--box {
+      padding: 25px;
+      flex-basis: 445px;
+      background: $color-field-01;
+      border-radius: 10px;
+
+      &__title {
+        font-size: 24px;
+        text-align: start;
+        margin-left: 20px;
+        @include font-h3-Philippines;
+      }
+      &__list {
+        text-align: start;
+        margin-top: 20px;
+        @include font-p2-Philippines;
+      }
+    }
+  }
+}
+
+.loans-mobil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 0 30px 0;
+  background: $color-field-03;
+  @media screen and (min-width: 575px) {
+    display: none;
+  }
+  &__title {
+    @include font-h2-Philippines;
+    font-size: 20px;
+    line-height: 25px;
+    color: $color-text-06;
+    margin-bottom: 6px;
+  }
+  &__text {
+    @include font-p3-Philippines;
+  }
+  &__wrapper {
+    background: $color-field-05;
+    padding: 20px;
+    margin-top: 25px;
+    max-width: 350px;
+    min-width: 350px;
+    border-radius: 10px;
+    &--box {
+      &__title {
+        @include font-h3-Philippines;
+        font-size: 15px;
+        line-height: 18.75px;
+        color: $color-text-06;
+        margin-bottom: 15px;
+      }
+      &__list {
+        @include font-p2-Philippines;
+      }
+    }
+  }
+}
+
+.priv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 80px auto;
+  @media screen and (max-width: 575px) {
+    margin: 30px auto 30px auto;
+    max-width: 350px;
+    min-width: 350px;
+  }
+  &__title {
+    @include font-h2-Philippines;
+    @media screen and (max-width: 575px) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    gap: 25px;
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+    }
+    &--box {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding: 25px;
+      flex-basis: 290px;
+      background: $color-field-01;
+      border-radius: 10px;
+      @media screen and (max-width: 575px) {
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 25px 20px 25px;
+        flex-basis: 0;
+      }
+      &__content {
+        @media screen and (max-width: 575px) {
+          margin-left: 20px;
+        }
+        &--title {
+          @include font-h3-Philippines;
+          text-align: start;
+          margin-top: 22px;
+          @media screen and (max-width: 575px) {
+            margin-top: 0;
+            font-size: 15px;
+            line-height: 18.75px;
+          }
+        }
+        &--text {
+          text-align: start;
+          margin-top: 20px;
+          @include font-p2-Philippines;
+          @media screen and (max-width: 575px) {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bank-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $color-field-01;
+  padding: 80px 0;
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    font-family: ReadexPro, sans-serif;
+    color: $color-text-01;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 920px;
+    &--header {
+      display: flex;
+      padding: 35px 47px 10px 140px;
+      &__text {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 16.25px;
+        font-family: ReadexPro, sans-serif;
+        color: $color-text-07;
+      }
+    }
+    &--gap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      &__box {
+        display: flex;
+        align-items: center;
+        padding: 17px 30px;
+        width: 920px;
+        height: 90px;
+        background: $color-background;
+        border-radius: 10px;
+        &__place {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-right: 45px;
+          width: 112px;
+          &--number {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+            font-family: ReadexPro, sans-serif;
+            color: $color-text-02;
+          }
+        }
+        &__logo {
+          align-self: center;
+          width: 250px;
+        }
+        &__grade {
+          padding-right: 75px;
+        }
+        &__text {
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 20.43px;
+          font-family: OpenSans, sans-serif;
+          color: $color-text-07;
+          padding-right: 71px;
+        }
+      }
+    }
+    &--btn {
+      padding-top: 35px;
+    }
+  }
+}
+
+.bank-rating-mobil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  background: $color-field-01;
+  @media screen and (min-width: 575px) {
+    display: none;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    font-family: ReadexPro, sans-serif;
+    color: $color-text-01;
+  }
+  &__wrapper {
+    &--header {
+      padding-left: 104px;
+      &__text {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19.07px;
+        font-family: OpenSans, sans-serif;
+        color: $color-text-04;
+      }
+    }
+    &--box {
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      height: 100%;
+      &__place {
+        display: flex;
+        align-items: center;
+        padding: 0 20px 0 20px;
+        &--number {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 25px;
+          font-family: ReadexPro, sans-serif;
+          color: $color-text-02;
+        }
+      }
+      &__logo {
+
+      }
+      &__grade {
+        display: flex;
+        align-items: center;
+        padding-left: 104px;
+      }
+      &__text {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 18.75px;
+        font-family: ReadexPro, sans-serif;
+        color: $color-text-01;
+        padding-left: 104px
+      }
+    }
+    &--line {
+      overflow: hidden;
+      border-style: inset;
+      border-width: 1px
+    }
+  }
+}
+
+.list-dash {
+  list-style: none;
+  text-indent: -20px;
+  margin-left: 20px;
+}
+
+.list-dash:before {
+  content: '●';
+  font-size: 10px;
+  color: $color-text-04;
+  margin-right: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+.w-125 {
+  width: 125px;
+  @media screen and (max-width: 575px) {
+    width: 100%;
+  }
+}
+
+.pr-220 {
+  padding-right: 220px;
+}
+
+.pr-95 {
+  padding-right: 95px;
+}
+
+.pr-65 {
+  padding-right: 65px;
+}
+
+.pr-55 {
+  padding-right: 55px;
+}
+
+.btn_loans {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.full-none {
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+}
+
+.first {
+  color: $color-text-13;
+}
+
+.second {
+  color: $color-text-02;
+}
+
+.third {
+  color: $color-text-14;
+}
+

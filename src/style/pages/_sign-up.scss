@@ -1,0 +1,95 @@
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    @media screen and (max-width: 575px) {
+      width: 350px;
+    }
+    &--end-back {
+      @media screen and (max-width: 575px) {
+        align-self: end;
+      }
+    }
+    &--box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 25px;
+      background: $color-field-01;
+      border-radius: 10px;
+      margin: 15px 0 35px 0;
+      @media screen and (max-width: 575px) {
+        margin: 20px 0 25px 0;
+      }
+      &__img {
+        margin-bottom: 25px;
+      }
+      &__title {
+        @include font-h3-Philippines;
+        color: $color-text-02;
+        margin-bottom: 35px;
+        @media screen and (max-width: 575px) {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 25px;
+          margin-bottom: 25px;
+        }
+      }
+      &__input-email {
+        padding: 10px 20px;
+        background: $color-field-05;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        @media screen and (max-width: 575px) {
+          margin-bottom: 20px;
+        }
+        &--placeholder {
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 13.75px;
+          font-family: ReadexPro, sans-serif;
+          color: $color-text-04;
+        }
+        &--input {
+          @include font-p2-Philippines;
+        }
+      }
+      &__input-name {
+        padding: 10px 20px;
+        background: $color-field-05;
+        width: 100%;
+        border-radius: 10px;
+        &--placeholder {
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 13.75px;
+          font-family: ReadexPro, sans-serif;
+          color: $color-text-04;
+        }
+        &--input {
+          @include font-p2-Philippines;
+        }
+      }
+    }
+    &--get-code {
+      @media screen and (max-width: 575px) {
+        width: 350px;
+      }
+    }
+    &--account-btn {
+      @include font-p2-Philippines;
+      margin-top: 25px;
+      &:hover {
+        color: $color-text-02;
+      }
+    }
+  }
+}

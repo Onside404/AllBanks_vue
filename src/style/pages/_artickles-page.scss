@@ -1,0 +1,162 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  @media screen and (max-width: 575px) {
+    padding: 40px 0;
+  }
+  &__title-mobil {
+    width: 350px;
+    @include font-h3-Philippines;
+    color: $color-text-16;
+    margin-bottom: 25px;
+  }
+  &__wrapper {
+    @media screen and (max-width: 575px) {
+      width: 350px;
+    }
+    &--box {
+      width: 920px;
+      padding: 25px;
+      background: $color-field-01;
+      border-radius: 10px;
+      @media screen and (max-width: 575px) {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        padding: 10px;
+      }
+      &__title {
+        @include font-h3-Philippines;
+        color: $color-text-16;
+        margin-bottom: 25px;
+        @media screen and (max-width: 575px) {
+          display: none;
+        }
+      }
+      &__content {
+        display: flex;
+        @media screen and (max-width: 575px) {
+          flex-direction: column;
+          gap: 20px;
+        }
+        &--news {
+          padding: 25px;
+          width: 288px;
+          height: 173px;
+          border-radius: 10px;
+          @media screen and (max-width: 575px) {
+            padding: 10px;
+            width: 100%;
+            height: auto;
+          }
+          &:hover {
+            background: $color-background;
+          }
+          &--date {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 16.25px;
+            font-family: ReadexPro, sans-serif;
+            color: $color-text-07;
+            margin-bottom: 15px;
+            @media screen and (max-width: 575px) {
+              margin-bottom: 10px;
+              font-size: 10px;
+              font-weight: 400;
+              line-height: 13.62px;
+              font-family: OpenSans, sans-serif;
+            }
+          }
+          &--content {
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 22.5px;
+            font-family: OpenSans, sans-serif;
+            color: $color-text-16;
+            @media screen and (max-width: 575px) {
+              line-height: 18.75px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+  @media screen and (max-width: 575px) {
+    padding-bottom: 40px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 920px;
+    @media screen and (max-width: 575px) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 350px;
+
+    }
+    &--box {
+      background: $color-field-01;
+      border-radius: 10px;
+      overflow: hidden;
+      &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 25px;
+        @media screen and (max-width: 575px) {
+          padding: 25px 20px 20px 20px;
+        }
+        &--title {
+          display: flex;
+          justify-content: space-between;
+          &--text {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 16.25px;
+            font-family: ReadexPro, sans-serif;
+            color: $color-text-07;
+            @media screen and (max-width: 575px) {
+              font-size: 10px;
+              font-weight: 400;
+              line-height: 13.62px;
+              font-family: OpenSans, sans-serif;
+            }
+          }
+          &--date {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 16.25px;
+            font-family: ReadexPro, sans-serif;
+            color: $color-text-07;
+            @media screen and (max-width: 575px) {
+              font-size: 10px;
+              font-weight: 400;
+              line-height: 13.62px;
+              font-family: OpenSans, sans-serif;
+            }
+          }
+        }
+        &--text {
+          @include font-h3-Philippines;
+          font-weight: 700;
+          color: $color-text-02;
+          @media screen and (max-width: 575px) {
+            font-size: 20px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+}

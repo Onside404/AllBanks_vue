@@ -1,0 +1,758 @@
+.bank-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0 30px 0;
+  background: $color-field-05;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 920px;
+    @media screen and (max-width: 575px) {
+      width: 350px;
+    }
+    &--logo {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 35px;
+      &__name {
+        &--text {
+          @include font-h1-Philippines;
+          color: $color-text-06;
+          @media screen and (max-width: 575px) {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 40px;
+            font-family: ReadexPro, sans-serif;
+          }
+        }
+        &--grade {
+          display: flex;
+          gap: 5px;
+          &__number {
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 28.6px;
+            font-family: OpenSans, sans-serif;
+            color: $color-text-04;
+          }
+        }
+      }
+    }
+    &--write-review {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 35px;
+      @media screen and (max-width: 575px) {
+        flex-direction: column;
+        gap: 25px;
+      }
+      &__input {
+        display: flex;
+        gap: 15px;
+        width: 694px;
+        height: 100%;
+        padding: 10px 15px;
+        background: $color-field-03;
+        border-radius: 10px;
+        @include font-p-Philippines;
+        @media screen and (max-width: 575px) {
+          width: 100%;
+        }
+      }
+      &__btn {
+        @media screen and (max-width: 575px) {
+          width: 100%;
+        }
+      }
+    }
+    &--btn-switch {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 42px;
+      width: 920px;
+      height: 25px;
+      @media screen and (max-width: 575px) {
+        width: 350px;
+        height: auto;
+        gap: 15px 25px;
+      }
+      &__button {
+        @include font-p-Philippines;
+        &:hover {
+          color: $color-text-06;
+          border-bottom: 3px solid $color-background;
+        }
+      }
+    }
+  }
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  @media screen and (max-width: 575px) {
+    background: $color-field-01;
+    padding: 40px 0;
+  }
+  &__title {
+    @include font-h2-Philippines;
+    margin-bottom: 35px;
+    @media screen and (max-width: 575px) {
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 25px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 920px;
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+      gap: 20px;
+      width: 350px;
+    }
+    &--box {
+      width: 100%;
+      padding: 25px;
+      background: $color-field-01;
+      border-radius: 10px;
+      position: relative;
+      @media screen and (max-width: 575px) {
+        background: $color-background;
+      }
+      &__title {
+        @include font-h3-Philippines;
+        margin-bottom: 10px;
+        @media screen and (max-width: 575px) {
+          font-size: 15px;
+          line-height: 18.75px;
+        }
+      }
+      &__grade {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+        @media screen and (max-width: 575px) {
+          margin-bottom: 50px;
+        }
+        &--stars {
+          width: 62px;
+          height: 10px;
+        }
+        &--quantity {
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 17.7px;
+          font-family: OpenSans, sans-serif;
+          color: $color-text-04;
+          @media screen and (max-width: 575px) {
+            font-size: 15px;
+            line-height: 20.43px;
+          }
+        }
+      }
+      &__options {
+        display: flex;
+        flex-direction: column;
+        &--number {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 27.24px;
+          font-family: OpenSans, sans-serif;
+          color: $color-text-02;
+          @media screen and (max-width: 575px) {
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 18.75px;
+            font-family: ReadexPro, sans-serif;
+          }
+        }
+        &--text {
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 20.43px;
+          font-family: OpenSans, sans-serif;
+          color: $color-text-02;
+          @media screen and (max-width: 575px) {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 21.79px;
+            color: $color-text-04;
+          }
+        }
+      }
+      &__img {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        @media screen and (max-width: 575px) {
+          top: 25px;
+        }
+      }
+    }
+  }
+}
+
+.about-bank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  background: $color-field-03;
+  &__title {
+    @include font-h2-Philippines;
+    color: $color-text-06;
+    margin-bottom: 35px;
+  }
+  &__btn-wrapper {
+    display: flex;
+    gap: 42px;
+    margin-bottom: 30px;
+    width: 920px;
+    height: 25px;
+    @media screen and (max-width: 575px) {
+      width: 350px;
+      gap: 25px;
+    }
+    &--button {
+      @include font-p-Philippines;
+      color: $color-text-07;
+      &:hover {
+        color: $color-text-06;
+        border-bottom: 3px solid $color-background;
+      };
+    }
+  }
+}
+
+.bank-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  gap: 35px;
+  @media screen and (max-width: 575px) {
+    padding: 40px 0;
+    gap: 20px;
+  }
+  &__title {
+    @include font-h2-Philippines;
+    @media screen and (max-width: 575px) {
+      display: none;
+    }
+    &--grey {
+      color: $color-text-07;
+    }
+  }
+  &__title-mobil {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    font-family: ReadexPro, sans-serif;
+    color: $color-text-01;
+    margin-bottom: 5px;
+    @media screen and (min-width: 575px) {
+      display: none;
+    }
+  }
+  &__input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 20px;
+    background: $color-field-03;
+    width: 920px;
+    border-radius: 40px;
+    @media screen and (max-width: 575px) {
+      gap: 13px;
+      width: 350px;
+      padding: 10px 20px;
+    }
+  }
+  &__search {
+    width: 920px;
+    height: 325px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    @media screen and (max-width: 575px) {
+      width: 350px;
+      height: 350px;
+    }
+    &--map {
+      position: absolute;
+      width: 920px;
+      @media screen and (max-width: 575px) {
+        max-width: 150%;
+        left: -70px;
+      }
+    }
+  }
+}
+
+.reviews-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  &__title {
+    @include font-h2-Philippines;
+    margin-bottom: 35px;
+  }
+}
+
+.rating-bg {
+  background: $color-field-01 !important;
+}
+
+.reviews-bank__wrapper--box {
+  background: $color-field-04;
+}
+
+.rating-bank-page {
+  padding: 25px;
+  width: 920px;
+  border-radius: 10px;
+  background: $color-field-04;
+  @media screen and (max-width: 575px) {
+    width: 350px;
+    padding: 20px;
+  }
+  &--title {
+    @include font-h3-Philippines;
+    color: $color-text-06;
+    @media screen and (max-width: 575px) {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+  }
+  &--grade {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+    &__star {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &--img {
+      }
+    }
+    &__number {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 40px;
+      font-family: ReadexPro, sans-serif;
+      color: $color-text-06;
+      @media screen and (max-width: 575px) {
+        @include font-h3-Philippines;
+        font-weight: 700;
+        color: $color-text-06;
+      }
+    }
+  }
+  &--text {
+    @include font-p2-Philippines;
+    color: $color-text-07;
+    @media screen and (max-width: 575px) {
+      font-weight: 700;
+    }
+  }
+  &--report {
+    display: flex;
+    gap: 35px;
+    margin: 35px 0;
+    @media screen and (max-width: 575px) {
+      gap: 25px;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &--name {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 16.25px;
+        font-family: ReadexPro, sans-serif;
+        color: $color-text-07;
+        @media screen and (max-width: 575px) {
+          font-size: 14px;
+          line-height: 19.07px;
+          font-family: OpenSans, sans-serif;
+        }
+      }
+      &--text {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20.43px;
+        font-family: OpenSans, sans-serif;
+        color: $color-text-06;
+        @media screen and (max-width: 575px) {
+          line-height: 18.75px;
+        }
+      }
+    }
+  }
+  &--switch-btn {
+    display: flex;
+    gap: 42px;
+    margin-bottom: 21px;
+    @media screen and (max-width: 575px) {
+      gap: 25px;
+    }
+    &__button {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21.79px;
+      font-family: OpenSans, sans-serif;
+      color: $color-text-07;
+      &:hover {
+        color: $color-text-06;
+      }
+    }
+  }
+  &--index {
+    display: flex;
+    align-items: center;
+    &__number {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21.79px;
+      font-family: OpenSans, sans-serif;
+      color: $color-text-06;
+      margin-right: 20px;
+      @media screen and (max-width: 575px) {
+        font-size: 15px;
+        line-height: 18.75px;
+        font-family: ReadexPro, sans-serif;
+        margin-right: 10px;
+      }
+    }
+    &__checkbox {
+      position: relative;
+      margin-right: 20px;
+      &--checkbox-input {
+        -webkit-appearance: none;
+        appearance: none;
+        position: absolute;
+      }
+      &--checkbox-label {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.79px;
+        font-family: OpenSans, sans-serif;
+        color: $color-text-16;
+        padding-left: 27px;
+      }
+      &--checkbox-label:before {
+        content: "";
+        display: block;
+        width: 14px;
+        height: 14px;
+        border-radius: 3px;
+        background-color: $color-field-05;
+
+        position: absolute;
+        top: 4px;
+        left: 0;
+        z-index: 1;
+      }
+      &--checkbox-label:after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("@/assets/item_svg/bank-rating/checkbox.svg") no-repeat;
+        opacity: 0;
+
+        position: absolute;
+        top: 7px;
+        left: 3px;
+        z-index: 2;
+      }
+    }
+    &__stars{
+      margin-right: 25px;
+      @media screen and (max-width: 575px) {
+        width: 75px;
+        margin-right: 15px;
+      }
+    }
+    &__input {
+      -webkit-appearance: none;
+      margin-right: 25px;
+      width: 585px;
+      height: 4px;
+      background: $color-field-03;
+      border-radius: 5px;
+      background-image: linear-gradient($color-field-22, $color-field-22);
+      background-size: 87% 100%;
+      background-repeat: no-repeat;
+      @media screen and (max-width: 575px) {
+        width: 102px;
+        margin-right: 15px;
+      }
+    }
+    &__input::-webkit-slider-thumb {
+      display: none;
+    }
+    &__reviews {
+      width: 41px;
+      text-align: end;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 17.7px;
+      font-family: OpenSans, sans-serif;
+      color: $color-text-04;
+      margin-right: 10px;
+      @media screen and (max-width: 575px) {
+        width: 44px;
+
+      }
+    }
+    &__percent {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 17.7px;
+      font-family: OpenSans, sans-serif;
+      color: $color-text-07;
+    }
+  }
+}
+
+.reviews-bank-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 35px;
+    gap: 25px;
+    &--box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      padding: 25px;
+      flex-basis: 290px;
+      border-radius: 10px;
+      height: 240px;
+      background: $color-field-04;
+      &__img {
+        margin-bottom: 23px;
+        width: 138px;
+      }
+      &__title {
+        @include font-h3-Philippines;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: start;
+        color: $color-text-06;
+
+      }
+      &__text {
+        text-align: start;
+        color: $color-text-04;
+        font-size: 13px;
+        line-height: 17.7px;
+        font-weight: 400;
+        font-family: OpenSans, sans-serif;
+      }
+      &__link {
+        margin-bottom: 25px;
+        color: $color-text-07;
+        @include font-p3-Philippines;
+      }
+      &__grade {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: end;
+        width: 100%;
+        color: $color-text-07;
+        font-size: 10px;
+        line-height: 13.62px;
+        font-weight: 400;
+        font-family: OpenSans, sans-serif;
+      }
+    }
+  }
+}
+
+.reviews-bank-page-mobil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 0 30px 0;
+  @media screen and (min-width: 575px) {
+    display: none;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 25px;
+    width: 350px;
+    height: 219px;
+    background: $color-field-04;
+    border-radius: 10px;
+    &--img {
+      width: 138px;
+    }
+    &--title {
+      @include font-h3-Philippines;
+      font-size: 15px;
+      line-height: 18.75px;
+      text-align: start;
+      color: $color-text-06;
+
+    }
+    &--text {
+      text-align: start;
+      color: $color-text-04;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20.43px;
+      font-family: OpenSans, sans-serif;
+    }
+    &--bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      &__grade {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $color-text-07;
+        font-size: 10px;
+        line-height: 13.62px;
+        font-weight: 400;
+        font-family: OpenSans, sans-serif;
+      }
+      &__link {
+        color: $color-text-07;
+        @include font-p3-Philippines;
+      }
+    }
+  }
+}
+
+.contacts-bank {
+  display: flex;
+  width: 920px;
+  padding: 25px;
+  background: $color-field-05;
+  border-radius: 10px;
+  @media screen and (max-width: 575px) {
+    width: 350px;
+    flex-wrap: wrap;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    padding: 12px 37px 12px 13px;
+    margin-right: 25px;
+    border-right: 1px solid $color-field-03;
+    @media screen and (max-width: 575px) {
+      border: none;
+      padding: 0;
+      margin-right: 0;
+      margin-bottom: 35px;
+    }
+    &--img {
+      width: 138px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    @media screen and (max-width: 575px) {
+      justify-content: start;
+      gap: 25px;
+    }
+    &--info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &__title {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 16.25px;
+        font-family: ReadexPro, sans-serif;
+        color: $color-text-07;
+        @media screen and (max-width: 575px) {
+          @include font-p3-Philippines;
+        }
+      }
+      &__text {
+        @include font-p2-Philippines;
+        color: $color-text-06;
+        @media screen and (max-width: 575px) {
+          font-weight: 600;
+          line-height: 18.75px;
+
+        }
+      }
+    }
+  }
+}
+
+.about-info-bank {
+  display: flex;
+  width: 920px;
+  padding: 25px;
+  background: $color-field-05;
+  border-radius: 10px;
+  gap: 53px;
+  @media screen and (max-width: 575px) {
+    width: 350px;
+    flex-wrap: wrap;
+    gap: 25px 45px;
+  }
+  &--info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &__title {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 16.25px;
+      font-family: ReadexPro, sans-serif;
+      color: $color-text-07;
+      @media screen and (max-width: 575px) {
+        @include font-p3-Philippines;
+      }
+    }
+    &__text {
+      @include font-p2-Philippines;
+      color: $color-text-06;
+      @media screen and (max-width: 575px) {
+        font-weight: 600;
+        line-height: 18.75px;
+
+      }
+    }
+  }
+}
+
+.active_switch_bank_page {
+  color: $color-text-06;
+  border-bottom: 3px solid $color-text-06;
+}

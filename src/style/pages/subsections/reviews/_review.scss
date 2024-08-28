@@ -1,0 +1,195 @@
+.container-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__btn {
+    width: 920px;
+    margin: 35px 0;
+    @media screen and (max-width: 575px) {
+      width: 350px;
+      margin: 15px 0;
+    }
+  }
+  &__box {
+    width: 920px;
+    padding: 25px;
+    background: $color-field-01;
+    border-radius: 10px;
+    @media screen and (max-width: 575px) {
+      width: 350px;
+    }
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      &--user {
+        display: flex;
+        align-items: center;
+        &__avatar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 46px;
+          height: 46px;
+          background: $color-background;
+          border-radius: 5px;
+        }
+        &__item {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 15px;
+          gap: 5px;
+          &--name {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17.5px;
+            font-family: ReadexPro, sans-serif;
+            color: $color-text-16;
+            @media screen and (max-width: 575px) {
+              font-size: 13px;
+              line-height: 16.25px;
+            }
+          }
+          &--date {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 16.25px;
+            font-family: ReadexPro, sans-serif;
+            color: $color-text-04;
+            @media screen and (max-width: 575px) {
+              font-size: 10px;
+              font-weight: 400;
+              line-height: 13.62px;
+              font-family: OpenSans, sans-serif;
+            }
+          }
+        }
+      }
+      &--stars {
+        @media screen and (max-width: 575px) {
+          width: 75px;
+        }
+      }
+    }
+    &__body {
+      margin-bottom: 15px;
+      &--title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        font-family: ReadexPro, sans-serif;
+        color: $color-text-16;
+        margin-bottom: 15px;
+        @media screen and (max-width: 575px) {
+          font-size: 15px;
+          line-height: 18.75px;
+        }
+      }
+      &--text {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
+        font-family: OpenSans, sans-serif;
+        color: $color-text-04;
+        @media screen and (max-width: 575px) {
+          line-height: 20.43px;
+        }
+      }
+    }
+    &__overflow {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      &--info-card {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        &__img {
+          @media screen and (max-width: 575px) {
+            width: 82px;
+          }
+        }
+        &__text {
+          font-size: 13px;
+          font-weight: 300;
+          line-height: 16.25px;
+          font-family: ReadexPro, sans-serif;
+          color: $color-text-04;
+          @media screen and (max-width: 575px) {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 13.62px;
+            font-family: OpenSans, sans-serif;
+          }
+        }
+      }
+      &__btn {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19.07px;
+        font-family: OpenSans, sans-serif;
+        color: $color-text-07;
+      }
+    }
+    &__message {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media screen and (max-width: 575px) {
+        flex-direction: column;
+        align-items: start;
+      }
+      &--img {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      &--buttons {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        @media screen and (max-width: 575px) {
+          width: 100%;
+          margin-top: 15px;
+        }
+        &__like {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          @media screen and (max-width: 575px) {
+            width: 100%;
+            justify-content: space-between;
+          }
+          &--text {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 16.25px;
+            font-family: ReadexPro, sans-serif;
+            color: $color-text-07;
+          }
+          &--btn {
+            cursor: pointer;
+          }
+        }
+        &__answers {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          &--number {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 16.25px;
+            font-family: ReadexPro, sans-serif;
+            color: $color-text-07;
+          }
+          &--btn {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+

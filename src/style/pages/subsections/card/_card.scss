@@ -1,0 +1,305 @@
+.navi-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0 30px 0;
+  background: $color-field-05;
+  gap: 35px;
+  @media screen and (max-width: 575px) {
+    background: $color-field-03;
+  }
+  &__btn-switch {
+    display: flex;
+    gap: 42px;
+    width: 920px;
+    height: 25px;
+    @media screen and (max-width: 575px) {
+      width: 350px;
+    }
+    &--button {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21.79px;
+      font-family: OpenSans, sans-serif;
+      color: $color-text-07;
+      &:hover {
+        color: $color-text-06;
+        border-bottom: 3px solid $color-background;
+      }
+    }
+  }
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  width: 920px;
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    &--logo {
+      display: flex;
+      gap: 25px;
+      &__name {
+        &--title {
+          font-size: 50px;
+          font-weight: 700;
+          line-height: 62.5px;
+          font-family: ReadexPro, sans-serif;
+          color: $color-text-06;
+        }
+        &--text {
+          font-size: 21px;
+          font-weight: 600;
+          line-height: 28.6px;
+          font-family: OpenSans, sans-serif;
+          color: $color-text-04;
+        }
+      }
+    }
+    &--params {
+      display: flex;
+      padding-left: 117px;
+      gap: 35px;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &--title {
+          @include font-card-title-desk;
+        }
+        &--text {
+          @include font-card-text-desk;
+        }
+      }
+
+    }
+  }
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &--img {
+      width: 146px;
+      height: 93px;
+    }
+  }
+}
+
+.card-head-mobil {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  @media screen and (min-width: 575px) {
+    display: none;
+  }
+  &__logo {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 40px;
+    &--img {
+      width: 79px;
+      height: 79px;
+    }
+    &--name {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 40px;
+        font-family: ReadexPro, sans-serif;
+        color: $color-text-06;
+      }
+      &__text {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 28.6px;
+        font-family: OpenSans, sans-serif;
+        color: $color-text-04;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: $color-field-05;
+    border-radius: 10px;
+    &--description {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px 48px;
+      margin: 25px 0;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        &__title {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 19.07px;
+          font-family: ReadexPro, sans-serif;
+          color: $color-text-07
+        }
+        &__text {
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 18.75px;
+          font-family: OpenSans, sans-serif;
+          color: $color-text-06;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  @media screen and (max-width: 575px) {
+    background: $color-field-01;
+    padding: 40px 0;
+  }
+  &__title {
+    margin-bottom: 35px;
+    @include font-h2-Philippines;
+    @media screen and (max-width: 575px) {
+      font-size: 20px;
+      line-height: 25px;
+      color: $color-text-01;
+    }
+  }
+  &__btn-switch-desk {
+    display: flex;
+    width: 920px;
+    flex-wrap: wrap;
+    gap: 42px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 575px) {
+      width: 350px;
+      gap: 15px 25px;
+      margin-bottom: 25px;
+    }
+    &--button {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21.79px;
+      font-family: OpenSans, sans-serif;
+      color: $color-text-04;
+      &:hover {
+        color: $color-text-16;
+      }
+    }
+  }
+  &__table {
+    width: 920px;
+    @media screen and (max-width: 575px) {
+      width: 350px;
+    }
+    &--row {
+      display: flex;
+      padding: 20px 40px;
+      @media screen and (max-width: 575px) {
+        flex-direction: column;
+        padding: 20px;
+        gap: 7px;
+      }
+      &__name {
+        width: 320px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        font-family: ReadexPro, sans-serif;
+        color: $color-text-16;
+        @media screen and (max-width: 575px) {
+          font-size: 14px;
+          line-height: 19.07px;
+          color: $color-text-07;
+        }
+      }
+      &__date {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.79px;
+        font-family: OpenSans, sans-serif;
+        color: $color-text-16;
+        @media screen and (max-width: 575px) {
+          font-size: 15px;
+          line-height: 18.75px;
+          font-family: ReadexPro, sans-serif;
+        }
+      }
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 520px;
+        @media screen and (max-width: 575px) {
+          width: 100%;
+        }
+        &--item {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 21.79px;
+          font-family: OpenSans, sans-serif;
+          color: $color-text-16;
+          &:before {
+            content: "●";
+            font-size: 15px;
+            color: $color-text-16;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.rating {
+  background: $color-field-01;
+}
+
+.reviews-bank__wrapper--box {
+  background: $color-field-01;
+}
+
+.table-bg-dark {
+  border-radius: 10px;
+  background-color: $color-field-01;
+  @media screen and (max-width: 575px) {
+    background: $color-background;
+  }
+}
+
+.active_switch {
+  color: $color-text-16;
+  border-bottom: 3px solid $color-field-05;
+}
+
+.active_page {
+  color: $color-text-06;
+  border-bottom: 3px solid $color-background;
+}
+
+.gap-25 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.hide-text {
+  height: 127px;
+  overflow: hidden;
+  @media screen and (max-width: 575px) {
+    height: 120px;
+  }
+}
